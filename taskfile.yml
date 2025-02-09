@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+  docker:build:
+    cmds:
+      - docker build -t nirajsapkota/nsapkota.dev:latest --platform linux/amd64 .
+
+  docker:push:
+    cmds:
+      - docker push nirajsapkota/nsapkota.dev:latest
